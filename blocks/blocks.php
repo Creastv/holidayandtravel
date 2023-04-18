@@ -89,6 +89,7 @@ function register_acf_block_types() {
       'keywords'          => array( 'hero' ),
       'enqueue_assets'    => function(){
           wp_enqueue_style( 'go-hero',  get_template_directory_uri() . '/blocks/hero/hero.min.css' );
+            wp_enqueue_script('go-hero-js', get_template_directory_uri() . '/blocks/hero/hero.js' , array( 'jquery' ),'4', true );
       },
     ));
 
