@@ -1,0 +1,129 @@
+body {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  color: $black;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  font-weight: 700;
+  color: $black;
+  margin: 0;
+  br {
+    @media #{$md} {
+      display: none;
+    }
+  }
+}
+.h1 {
+  margin: 0;
+  font-size: 36px;
+  font-weight: 300;
+  @media #{$sm} {
+    font-size: 28px;
+  }
+}
+
+p,
+li {
+  // font-size: 14px;
+  // line-height: 22px;
+  color: $light-black;
+}
+a {
+  color: $main;
+  transition: all 0.1s linear;
+}
+
+.single-post {
+  .entry-content {
+    p {
+      text-align: justify;
+    }
+  }
+}
+.entry-content {
+  // max-width: 1114px;
+  // margin: 0 auto;
+  // width: 100%;
+  ul,
+  ol {
+    font-size: 14px;
+    line-height: 22px;
+    margin-bottom: 30px;
+    font-weight: 300;
+  }
+  // p,
+  // li,
+  // a {
+  //   font-size: 14px;
+  // }
+}
+
+.text-center {
+  text-align: center;
+}
+.text-right {
+  text-align: right;
+}
+.underline {
+  text-decoration: underline;
+  -webkit-text-decoration-color: $main; /* Safari */
+  text-decoration-color: $main;
+}
+.btn-panel {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  span {
+    color: $light-black;
+  }
+}
+
+.section-title {
+  font-size: 51px;
+  line-height: 57px;
+  margin-bottom: 20px;
+  @media #{$md} {
+    font-size: 38px;
+    line-height: 44px;
+  }
+  @media #{$sm} {
+    font-size: 31px;
+    line-height: 37px;
+  }
+  br {
+    display: block !important;
+  }
+  span {
+    color: $main;
+    display: block;
+    margin: 10px 0;
+    @media #{$sm} {
+      margin: 15px 0;
+    }
+    b {
+      font-size: 80px;
+      @media #{$sm} {
+        font-size: 71px;
+      }
+    }
+  }
+}
+
+.sticky-element {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 100px;
+}

@@ -1,0 +1,77 @@
+@import "../../src/css/scss/variable";
+
+.b-opinie {
+  position: relative;
+  width: 100vw;
+  margin-left: -50vw;
+  left: 50%;
+
+  margin-bottom: 50px;
+  @media #{$sm} {
+    margin-bottom: 30px;
+  }
+  .b-opinie__wraper {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+
+    max-width: 1114px;
+    margin: 0 auto;
+    width: 100%;
+
+    @media #{$sm} {
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    .col {
+      width: 50%;
+      position: relative;
+      @media #{$sm} {
+        width: 100%;
+      }
+      &:nth-child(1) {
+        align-self: center;
+      }
+    }
+  }
+  .cyt {
+    position: absolute;
+    top: -90px;
+    line-height: 0;
+  }
+  .opinie {
+    .swiper-wrapper {
+      align-items: center;
+      @media #{$sm} {
+        align-items: flex-start;
+      }
+    }
+    .item {
+      .item_top {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        p {
+          font-size: 21px;
+          font-weight: 700;
+          margin: 0;
+          padding: 0;
+        }
+      }
+      .item__bottom {
+        p {
+          font-size: 14px;
+        }
+      }
+    }
+    .swiper-pagination {
+      position: relative;
+      text-align: left;
+      padding: 10px 0;
+      width: initial;
+      .swiper-pagination-bullet-active {
+        background-color: $main2;
+      }
+    }
+  }
+}
