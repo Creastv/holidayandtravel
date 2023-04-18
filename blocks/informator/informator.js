@@ -5,7 +5,7 @@ function loadXMLDoc() {
       myFunction(this);
     }
   };
-  xmlhttp.open("GET", "http://localhost/portal-t/rss.xml", true);
+  xmlhttp.open("GET", "https://noclegi.roial.pl/portal-t/rss.xml", true);
   xmlhttp.send();
 }
 
