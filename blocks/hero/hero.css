@@ -286,7 +286,7 @@ body.active {
   flex-direction: column;
   justify-content: flex-end;
   height: 50vh;
-  min-height: 500px;
+  min-height: 350px;
 }
 @media only screen and (max-width: 998px) {
   .hero .hero__bg__2 .row {
