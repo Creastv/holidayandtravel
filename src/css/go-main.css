@@ -546,7 +546,7 @@ body.active {
   padding: 5px 0 !important;
 }
 .js-header.active .header__bottom {
-  padding: 5px 0 !important;
+  padding: 10px 0 !important;
 }
 
 .js-header.remove-top {
