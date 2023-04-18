@@ -1008,9 +1008,14 @@ body.active {
   line-height: 16px;
 }
 
+.post-item a {
+  overflow: hidden;
+  display: block;
+}
 .post-item img {
   width: 100%;
   height: auto;
+  transition: all 0.1s linear;
 }
 .post-item hr {
   border-top: 1px solid #eeeef0;
@@ -1019,7 +1024,7 @@ body.active {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 20px 10px;
+  padding: 0 10px;
 }
 @media only screen and (max-width: 1500px) {
   .post-item .content {
@@ -1094,16 +1099,12 @@ body.active {
 .post-item h2 a:hover {
   color: #c2995e;
 }
-@media only screen and (max-width: 1500px) {
-  .post-item .content__btn {
-    width: 100%;
-    text-align: right;
-  }
+.post-item:hover img {
+  transition: all 0.1s linear;
+  transform: scale(1.1);
 }
-@media only screen and (max-width: 768px) {
-  .post-item .content__btn a {
-    margin: 10px 0;
-  }
+.post-item:hover .entry-title a {
+  color: #c2995e;
 }
 
 @media only screen and (max-width: 460px) {
@@ -1156,20 +1157,15 @@ body.active {
   align-items: center;
   justify-content: space-between;
 }
-.meta-group .meta {
-  padding: 10px;
-}
-@media only screen and (max-width: 768px) {
-  .meta-group .meta {
-    padding: 10px 2px;
-  }
-}
 .meta-group .meta * {
   font-size: 12px;
   color: #000000;
 }
 .meta-group .meta-pub {
-  text-align: right;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
 }
 .meta-group .meta-category {
   display: flex;
@@ -1432,6 +1428,10 @@ body.active {
 .tf-hotel__title-wrap a {
   font-size: 21px;
   line-height: 27px;
+}
+
+.tf-title-wrap .post-type {
+  display: none !important;
 }
 
 .btn {

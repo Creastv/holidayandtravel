@@ -2,7 +2,7 @@
 $displayTitle = get_field( 'display_title' );
 
 ?>
-<!-- <?php  if($displayTitle || is_category() || is_author() || is_tag() || is_day() || is_month() || is_year() || is_tax()  ) { ?> -->
+<?php  if( $displayTitle || is_category() || is_author() || is_tag() || is_day() || is_month() || is_year() || is_tax()) { ?>
 <header class="entry-header">
     <h1 class="entry-title">
         <?php if ( is_category() ) :
@@ -13,6 +13,8 @@ $displayTitle = get_field( 'display_title' );
 						the_title();
 					elseif ( is_tag() ) :
 						single_tag_title();
+					elseif ( is_tax()):
+						 single_term_title();
 					elseif ( is_author() ) :
 						the_post();
 						printf( __( '%s', 'go' ), get_the_author() );
@@ -40,4 +42,4 @@ $displayTitle = get_field( 'display_title' );
     <?php if (function_exists('rank_math_the_breadcrumbs')) rank_math_the_breadcrumbs(); ?>
     <?php the_archive_description( '<div class="taxonomy-description">', '</div>' ); ?>
 </header>
-<!-- <?php } ?> -->
+<?php } ?>

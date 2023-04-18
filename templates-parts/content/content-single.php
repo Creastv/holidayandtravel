@@ -5,10 +5,6 @@
                 <h1 class="entry-title section-title">
                     <?php the_title(); ?>
                 </h1>
-                <svg xmlns="http://www.w3.org/2000/svg" width="29" height="17" viewBox="0 0 29 17">
-                    <path id="Shape_3_copy_7" data-name="Shape 3 copy 7" d="M1959.5,4988a14.46,14.46,0,0,1-14.5-14.388,2.632,2.632,0,0,1,5.265,0,9.236,9.236,0,0,0,18.47,0,2.633,2.633,0,0,1,5.265,0A14.46,14.46,0,0,1,1959.5,4988Z" transform="translate(-1945 -4971)" fill="#575289" />
-                </svg>
-
                 <?php if (function_exists('rank_math_the_breadcrumbs')) rank_math_the_breadcrumbs(); ?>
             </div>
         </div>
