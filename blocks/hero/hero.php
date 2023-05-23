@@ -32,7 +32,6 @@ const carouselText = [
         text: "<?php echo $span['span']; ?>",
         color: "#c2995e"
     },
-
     <?php } ?>
 ];
 </script>

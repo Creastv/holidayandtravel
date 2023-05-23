@@ -4,6 +4,19 @@ $banery = get_field('banery');
 ?>
 
 
+<?php
+$url = "https://www.dziwnow.pl/asp/_private/rss.xml";
+$filename = "rtest.xml";
+
+// Pobierz plik z linku
+$file_content = file_get_contents($url);
+
+// Zapisz plik lokalnie
+file_put_contents($filename, $file_content);
+
+echo "Pobrano plik XML";
+?>
+
 <div class="inf-gd">
     <div class="inf-gd__wraper">
         <?php if($banery) { ?>
