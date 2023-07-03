@@ -1588,6 +1588,128 @@ th {
   }
 }
 
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+.form-group {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.form-group .wpcf7-form-control-wrap {
+  width: 100%;
+  padding-right: 15px;
+  padding-bottom: 15px;
+}
+
+.form-control {
+  outline: none;
+  border: 1px solid #c8e2fc;
+  background: #fff;
+  height: 50px;
+  line-height: 34px;
+  vertical-align: middle;
+  border-radius: 3px;
+  padding: 10px;
+  margin: 5px 0 10px;
+  width: 100%;
+}
+
+textarea.form-control {
+  height: 200px;
+}
+
+.form-row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.col-1 {
+  width: 100%;
+}
+
+.col-2 {
+  width: 50%;
+}
+@media only screen and (max-width: 768px) {
+  .col-2 {
+    width: 100%;
+  }
+}
+
+.col-3 {
+  width: 33.333%;
+}
+@media only screen and (max-width: 768px) {
+  .col-3 {
+    width: 100%;
+  }
+}
+
+.form-group.checkbox {
+  width: 70%;
+}
+@media only screen and (max-width: 768px) {
+  .form-group.checkbox {
+    width: 100%;
+  }
+}
+.form-group.checkbox label {
+  align-items: center;
+  display: flex;
+  gap: 10px;
+}
+.form-group.checkbox input {
+  width: 20px;
+}
+.form-group.checkbox span {
+  font-size: 12px;
+}
+
+.btn-form {
+  width: 30%;
+}
+@media only screen and (max-width: 768px) {
+  .btn-form {
+    width: 100%;
+  }
+}
+
+.wpcf7-submit {
+  margin: 15px 25px;
+  background: #c2995e;
+  border: 1px solid #c2995e;
+  color: #fff;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 10px 20px;
+}
+@media only screen and (max-width: 768px) {
+  .wpcf7-submit {
+    width: 100%;
+    display: block;
+  }
+}
+.wpcf7-submit:hover {
+  background-color: #c2995e;
+  color: #fff;
+}
+
+.wpcf7-spinner {
+  position: absolute;
+  top: 30%;
+  right: 0px;
+}
+
+.wpcf7-not-valid-tip {
+  font-size: 12px !important;
+  color: red !important;
+}
+
 select {
   border: 2px solid #fff !important;
 }/*# sourceMappingURL=go-main.css.map */
