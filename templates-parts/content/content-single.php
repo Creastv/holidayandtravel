@@ -36,11 +36,11 @@
 
         <?php the_content(); ?>
 
-        <?php if(is_singular('post')) { 
-            $av_id = get_the_author_meta('ID');
-            $im = get_field( 'avatar', 'user_'. $av_id );
+        <?php // if(is_singular('post')) { 
+           // $av_id = get_the_author_meta('ID');
+            // $im = get_field( 'avatar', 'user_'. $av_id );
         ?>
-        <div id="author-bio">
+        <!-- <div id="author-bio">
             <?php if($im) { ?>
             <div id="author-avatar"><img style="max-width:60px; height:auto;" src="<?php echo esc_url($im['url']); ?>" alt="<?php echo esc_attr($im['alt']); ?>" /></div>
             <?php } else { ?>
@@ -84,9 +84,9 @@
                 <div class="author-footer">
                     <p> <?php the_author_description(); ?></p>
                 </div>
-            </div><!-- #author-details -->
-        </div><!-- #author-bio -->
-        <?php } ?>
+            </div>
+        </div>#author-bio -->
+        <?php // } ?>
         <div class="kk-ata">
             <div class="kk-ata__wraper">
                 <span>Twoja ocena:</span>
