@@ -66,3 +66,75 @@
     });
   }
 })();
+
+const data = document.querySelector("#check-in-out-date");
+var modal = document.getElementById("myModal");
+
+jQuery(document).ajaxComplete(function () {
+  const oferts = document.querySelectorAll(".reserve");
+  for (let i = 0; i < oferts.length; i++) {
+    if (data.value) {
+      const link = document.createElement("a");
+      link.href = "#";
+      link.textContent = "Wyślij zapytanie ";
+      link.classList = "btn";
+      let div = oferts[i];
+      div.appendChild(link);
+
+      oferts[i].querySelector(".btn").addEventListener("click", (e) => {
+        e.preventDefault();
+
+        const titlePage = document.querySelector(".tf-head-title h1");
+        const replaceTitle = document.querySelector("#myModal h2");
+        const titlePlace = oferts[i].parentElement.querySelector(".tf-room-title h3").textContent;
+        replaceTitle.innerHTML = `${titlePage.textContent} - <span>${titlePlace}</span>`;
+        console.log(replaceTitle.querySelector("span"));
+
+        document.querySelector("#ilosc-dzieci").value = document.querySelector("#children").value;
+        document.querySelector("#ilosc-doroslych").value = document.querySelector("#adults").value;
+        document.querySelector("#data-od-do").value = data.value;
+        document.querySelector("#apartament").value = titlePlace;
+
+        showModal();
+      });
+    }
+  }
+});
+
+function showModal() {
+  modal.style.display = "block";
+}
+
+// Funkcja, która zamknie modal
+function closeModal() {
+  modal.style.display = "none";
+}
+
+const faqBtn = document.querySelector(".tf-hotel-enquiry .tf-btn");
+
+function faqModal() {
+  const textBtn = document.querySelector("#tf-ask-question-trigger");
+
+  const link = document.createElement("a");
+  link.href = "#";
+  link.textContent = textBtn.textContent;
+  link.classList = "btn";
+  let div = faqBtn;
+  div.appendChild(link);
+
+  const modal = document.getElementById("myModalFAQ");
+  const modalClose = modal.querySelector(".close-button");
+
+  link.addEventListener("click", (e) => {
+    e.preventDefault();
+    modal.style.display = "block";
+  });
+
+  modalClose.addEventListener("click", (e) => {
+    e.preventDefault();
+    modal.style.display = "none";
+  });
+}
+if (faqBtn) {
+  faqModal();
+}
