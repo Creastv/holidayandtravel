@@ -92,6 +92,7 @@ jQuery(document).ajaxComplete(function () {
 
         document.querySelector("#ilosc-dzieci").value = document.querySelector("#children").value;
         document.querySelector("#ilosc-doroslych").value = document.querySelector("#adults").value;
+        document.querySelector("#cena").value = document.querySelector(".woocommerce-Price-amount").textContent;
         document.querySelector("#data-od-do").value = data.value;
         document.querySelector("#apartament").value = titlePlace;
 
