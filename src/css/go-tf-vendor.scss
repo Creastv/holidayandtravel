@@ -1,0 +1,39 @@
+#hotel_location-adder,
+#hotel_feature-adder,
+#kk-star-ratings,
+#screen-meta-links,
+#menu-users,
+#commentstatusdiv,
+#wpfooter,
+#wp-admin-bar-edit-profile,
+#wp-admin-bar-user-info,
+#wp-admin-bar-new-content,
+.tablenav,
+.search-box,
+.subsubsub {
+  display: none !important;
+}
+
+#general {
+  display: none !important;
+}
+
+.tf-admin-tab {
+  a {
+    &:nth-child(1) {
+      display: none !important;
+    }
+  }
+}
+
+#adminmenuback,
+#adminmenu,
+.wp-submenu a,
+#adminmenu .wp-submenu,
+#adminmenuwrap {
+  background-color: red !important;
+  color: #fff;
+}
+#wpadminbar {
+  background-color: green;
+}
