@@ -126,6 +126,11 @@ body.active {
   gap: 10px;
 }
 
+.admin-bar #header {
+  top: 32px !important;
+  z-index: 99 !important;
+}
+
 .posts-wraper {
   display: flex;
   flex-wrap: wrap;

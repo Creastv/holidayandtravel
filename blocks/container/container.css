@@ -266,6 +266,11 @@ body.active {
   gap: 10px;
 }
 
+.admin-bar #header {
+  top: 32px !important;
+  z-index: 99 !important;
+}
+
 .go-container .go-container__bg .go-container__wraper {
   padding: 30px 0;
 }

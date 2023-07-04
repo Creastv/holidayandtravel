@@ -266,6 +266,11 @@ body.active {
   gap: 10px;
 }
 
+.admin-bar #header {
+  top: 32px !important;
+  z-index: 99 !important;
+}
+
 .faq__wraper {
   display: flex;
   margin-bottom: 50px;

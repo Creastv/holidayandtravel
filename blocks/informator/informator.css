@@ -266,6 +266,11 @@ body.active {
   gap: 10px;
 }
 
+.admin-bar #header {
+  top: 32px !important;
+  z-index: 99 !important;
+}
+
 .inf-gd .inf-gd__wraper .inf-gd__baners {
   width: 100%;
   display: flex;
