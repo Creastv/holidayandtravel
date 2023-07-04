@@ -10,11 +10,24 @@
 #wp-admin-bar-new-content,
 .tablenav,
 .search-box,
-.subsubsub {
+.subsubsub,
+.user-admin-color-wrap,
+.show-admin-bar.user-admin-bar-front-wrap,
+.user-language-wrap,
+.user-twitter-wrap,
+.user-facebook-wrap,
+.user-additional_profile_urls-wrap,
+.user-description-wrap,
+.user-profile-picture,
+#application-passwords-section {
   display: none !important;
 }
 
 #general {
+  display: none !important;
+}
+
+#wp-admin-bar-view-store {
   display: none !important;
 }
 
@@ -27,10 +40,10 @@
 .wp-submenu a,
 #adminmenu .wp-submenu,
 #adminmenuwrap {
-  background-color: red !important;
+  background-color: #0d559c !important;
   color: #fff;
 }
 
 #wpadminbar {
-  background-color: green;
+  background-color: #0d559c;
 }/*# sourceMappingURL=go-tf-vendor.css.map */

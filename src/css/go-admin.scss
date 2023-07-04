@@ -34,3 +34,8 @@ html :where(.wp-block)[data-align="right"] {
   width: 100%;
   height: initial !important;
 }
+
+#header {
+  top: 32px !important;
+  z-index: 99 !important;
+}

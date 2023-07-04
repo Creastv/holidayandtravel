@@ -140,9 +140,21 @@ add_filter( 'body_class', function( $classes ) {
     return array_merge( $classes, $roles );
 } );
 
-// function wpse_load_subscriber_stylesheet() {
-//     if ( current_user_can( 'tf_vendor' ) ) {
-//         wp_enqueue_style( 'login-subscriber-style', home_url( '/login/subscriber-style.css' ) );
-//     } 
-// }
-// add_acti( 'wp_enqueue_scripts', 'wpse_load_subscriber_stylesheet' );
+
+function profil_redirect() {
+    $current_screen = get_current_screen();
+    if (current_user_can('tf_vendor')) {
+      if ($current_screen->base === 'profile') {
+          wp_redirect(admin_url('edit.php?post_type=tf_hotel')); 
+          exit;
+      }
+    }
+}
+add_action('load-profile.php', 'profil_redirect');
+
+function dashboard_redirect() {
+  if (current_user_can('tf_vendor')) {
+    wp_redirect( admin_url( 'edit.php?post_type=tf_hotel' ) );
+  }
+}
+add_action('load-index.php', 'dashboard_redirect');
