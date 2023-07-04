@@ -113,3 +113,13 @@ textarea.form-control {
 select {
   border: 2px solid #fff !important;
 }
+
+.btn-form-wraper {
+  position: relative;
+}
+
+.tf-box-wrapper {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 100px;
+}

@@ -1778,4 +1778,13 @@ textarea.form-control {
 
 select {
   border: 2px solid #fff !important;
+}
+
+.btn-form-wraper {
+  position: relative;
+}
+
+.tf-box-wrapper {
+  position: sticky;
+  top: 100px;
 }/*# sourceMappingURL=go-main.css.map */
