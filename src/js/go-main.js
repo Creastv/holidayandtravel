@@ -104,11 +104,13 @@ jQuery(document).ajaxComplete(function () {
 
 function showModal() {
   modal.style.display = "block";
+  document.querySelector("body").style.overflow = "hidden";
 }
 
 // Funkcja, która zamknie modal
 function closeModal() {
   modal.style.display = "none";
+  document.querySelector("body").style.overflow = "initial";
 }
 
 const faqBtn = document.querySelector(".tf-hotel-enquiry .tf-btn");
@@ -129,11 +131,13 @@ function faqModal() {
   link.addEventListener("click", (e) => {
     e.preventDefault();
     modal.style.display = "block";
+    document.querySelector("body").style.overflow = "hidden";
   });
 
   modalClose.addEventListener("click", (e) => {
     e.preventDefault();
     modal.style.display = "none";
+    document.querySelector("body").style.overflow = "initial";
   });
 }
 if (faqBtn) {
